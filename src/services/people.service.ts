@@ -3,9 +3,8 @@ import { IPeople } from "@/models/people.interface";
 
 export abstract class PeopleService {
   static async getPeople(value?: string): Promise<IPeople[]> {
-    console.log( `${process.env.NEXT_PUBLIC_BASE_PATH}/${paths.GET_PEOPLE}?name=${value || ''}`)
     const dataGeneric = await fetch(
-      `${process.env.NEXT_PUBLIC_BASE_PATH}/${paths.GET_PEOPLE}?name=${value}`,
+      `${process.env.NEXT_PUBLIC_BASE_PATH}/${paths.GET_PEOPLE}?name=${value || ''}`,
       {
         method: "GET",
         headers: {

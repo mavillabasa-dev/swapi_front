@@ -5,7 +5,6 @@ const useForm = <T extends Object>(initState: T) => {
 
   const handleChange = ({ target }: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = target;
-    console.log({ name, value })
     setForm({
       ...form,
       [name]: value,
