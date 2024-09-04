@@ -1,6 +1,7 @@
-'use client'
-import Link from 'next/link';
-import React, { useState } from 'react';
+"use client";
+import { links } from "@/constants/endpointsRoutes";
+import Link from "next/link";
+import React, { useState } from "react";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -60,18 +61,15 @@ const Navbar = () => {
           <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
             <div className="hidden sm:block">
               <div className="flex space-x-4">
-                <Link href="/people" className="text-white hover:bg-blue-700 px-3 py-2 rounded-md text-sm font-medium">
-                  People
-                </Link>
-                <Link href="/films" className="text-white hover:bg-blue-700 px-3 py-2 rounded-md text-sm font-medium">
-                  Films
-                </Link>
-                <Link href="/vehicles" className="text-white hover:bg-blue-700 px-3 py-2 rounded-md text-sm font-medium">
-                  Vehicles
-                </Link>
-                <Link href="/planets" className="text-white hover:bg-blue-700 px-3 py-2 rounded-md text-sm font-medium">
-                  Planets
-                </Link>
+                {links.map((link, i) => (
+                  <Link
+                    key={`${link.href}-${i}`}
+                    href={link.href}
+                    className="text-white hover:bg-blue-700 px-3 py-2 rounded-md text-sm font-medium"
+                  >
+                    {link.label}
+                  </Link>
+                ))}
               </div>
             </div>
           </div>
@@ -84,16 +82,28 @@ const Navbar = () => {
       {isMobileMenuOpen && (
         <div className="sm:hidden" id="mobile-menu">
           <div className="px-2 pt-2 pb-3 space-y-1">
-            <Link href="/people" className="text-white hover:bg-blue-700 block px-3 py-2 rounded-md text-base font-medium">
+            <Link
+              href="/people"
+              className="text-white hover:bg-blue-700 block px-3 py-2 rounded-md text-base font-medium"
+            >
               People
             </Link>
-            <Link href="/films" className="text-white hover:bg-blue-700 block px-3 py-2 rounded-md text-base font-medium">
+            <Link
+              href="/films"
+              className="text-white hover:bg-blue-700 block px-3 py-2 rounded-md text-base font-medium"
+            >
               Films
             </Link>
-            <Link href="/vehicles" className="text-white hover:bg-blue-700 block px-3 py-2 rounded-md text-base font-medium">
-              Vehicles
+            <Link
+              href="/starships"
+              className="text-white hover:bg-blue-700 block px-3 py-2 rounded-md text-base font-medium"
+            >
+              Starships
             </Link>
-            <Link href="/planets" className="text-white hover:bg-blue-700 block px-3 py-2 rounded-md text-base font-medium">
+            <Link
+              href="/planets"
+              className="text-white hover:bg-blue-700 block px-3 py-2 rounded-md text-base font-medium"
+            >
               Planets
             </Link>
           </div>
