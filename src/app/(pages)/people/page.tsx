@@ -6,7 +6,7 @@ export default async function PeoplePage() {
 
   return (
     <>
-      <LayoutRenderPeople array={people} />;
+      <LayoutRenderPeople array={JSON.parse(JSON.stringify(people))} />;
     </>
   );
 }

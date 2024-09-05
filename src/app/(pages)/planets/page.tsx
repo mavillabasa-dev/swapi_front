@@ -5,7 +5,7 @@ export default async function PlanetsPage() {
   const planets = await PlanetsService.getPlanets();
   return (
     <>
-      <LayoutRenderPlanets array={planets} />;
+      <LayoutRenderPlanets array={JSON.parse(JSON.stringify(planets))} />;
     </>
   );
 }

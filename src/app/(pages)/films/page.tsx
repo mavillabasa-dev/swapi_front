@@ -7,7 +7,7 @@ export default async function FilmsPage() {
 
   return (
     <>
-      <LayoutRenderFilms array={films} />;
+      <LayoutRenderFilms array={JSON.parse(JSON.stringify(films)) } />;
     </>
   );
 }

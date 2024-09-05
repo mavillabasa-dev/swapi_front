@@ -7,7 +7,7 @@ export default async function StarshipPage() {
 
   return (
     <>
-      <LayoutRenderStarship array={starships} />
+      <LayoutRenderStarship array={JSON.parse(JSON.stringify(starships))} />
     </>
   );
 }
