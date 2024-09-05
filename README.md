@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🚀 SWAPI Frontend
 
-## Getting Started
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 
-First, run the development server:
+Frontend de un proyecto que consume la [SWAPI](https://swapi.dev/) (Star Wars API) utilizando Next.js.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 📝 Descripción
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Este proyecto es una aplicación frontend desarrollada con [Next.js](https://nextjs.org/). La aplicación consume la API pública de Star Wars ([SWAPI](https://swapi.dev/)) para mostrar información sobre personajes, planetas, naves espaciales y más del universo Star Wars.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🎨 Funcionalidades
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Interfaz de Usuario Moderna**: Diseñada con un enfoque en la experiencia del usuario.
+- **Consumo de SWAPI**: Obtén datos sobre personajes, planetas, naves y más.
+- **Navegación Dinámica**: Navega fácilmente entre diferentes secciones de la aplicación.
+- **Renderizado Lado del Servidor**: Aprovecha las capacidades de Next.js para mejorar el rendimiento.
 
-## Learn More
+## 🔧 Instalación
 
-To learn more about Next.js, take a look at the following resources:
+1. **Clona el repositorio**:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+    ```bash
+    git clone https://github.com/mavillabasa-dev/swapi_front
+    cd swapi_front
+    ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+2. **Instala las dependencias**:
 
-## Deploy on Vercel
+    ```bash
+    npm install
+    ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. **Ejecuta la aplicación**:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+    ```bash
+    npm run dev
+    ```
+
+    La aplicación estará disponible en [http://localhost:3000](http://localhost:3000).
+
+## 📁 Estructura del Proyecto
+
+- **`/pages`**: Contiene las páginas de la aplicación.
+- **`/components`**: Componentes reutilizables de la interfaz.
+- **`/styles`**: Archivos CSS para el diseño de la aplicación.
+- **`/public`**: Archivos estáticos como imágenes y fuentes.
+- **`/services`**: Servicios back.
+- **`/hooks`**: Custom hooks necesarios para este alcance.
+
+## 🔗 Enlaces Útiles
+
+- [Documentación de Next.js](https://nextjs.org/docs)
+- [SWAPI Documentation](https://swapi.dev/documentation)
+
+## 🤝 Contribuciones
+
+¡Las contribuciones son bienvenidas! Si tienes sugerencias o mejoras, por favor abre un [issue](https://github.com/tu-usuario/tu-repositorio/issues) o envía un [pull request](https://github.com/tu-usuario/tu-repositorio/pulls).
+
+## 🧑‍💻 Autor
+
+Marcos Villabasa - [@mavillabasa-dev](https://github.com/mavillabasa-dev/)
+
+## 📜 Licencia
+
+Este proyecto está licenciado bajo la [Licencia MIT](LICENSE).
+
